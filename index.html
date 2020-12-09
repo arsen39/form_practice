@@ -1,1 +1,71 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assest/css/reset.css" />
+    <link rel="stylesheet" href="assest/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form-box">
+      <header class="form-header">Register</header>
+      <p class="from-info">
+        Create your accaunt. It's free and only take a minute.
+      </p>
+      <form action="GET" class="registration-form">
+        <div class="name-familyname-box">
+          <input
+            type="text"
+            name="firstname"
+            placeholder="First Name"
+            pattern="^[A-Z][a-z]{2,15}$"
+            autocomplete="name"
+            required
+            autofocus
+          />
+          <input
+            type="text"
+            name="lastname"
+            placeholder="Last Name"
+            pattern="^[A-Z][a-z]{2,15}$"
+            autocomplete="family-name"
+            required
+          />
+        </div>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
+          autocomplete="email"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          autocomplete="new-password"
+          pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
+          required
+        />
+        <input
+          type="password"
+          name="confrim-password"
+          placeholder="Confrim Password"
+          required
+        />
+        <div class="checkbox-box">
+          <input type="checkbox" name="is-policy-accept" required />
+          <p class="checkbox-info">
+            I accept the <a class="green-link">Terms of Use</a> &
+            <a class="green-link">Privacy Policy</a>.
+          </p>
+        </div>
+        <button type="submit" 
+        name="submit-btn"
+        class="submit-btn">Register Now</button>
+      </form>
+    </div>
+  </body>
+</html>
