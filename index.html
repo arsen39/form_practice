@@ -20,14 +20,14 @@
             name="firstname"
             placeholder="First Name"
             pattern="^[A-Z][a-z]{2,15}$"
-            autocomplete="name" 
-            class="line-input"
+            autocomplete="name"
+            class="line-input familyname-box-item"
             required
             autofocus
           />
           <input
             type="text"
-            name="lastname" 
+            name="lastname"
             class="line-input"
             placeholder="Last Name"
             pattern="^[A-Z][a-z]{2,15}$"
@@ -37,7 +37,7 @@
         </div>
         <input
           type="email"
-          name="email" 
+          name="email"
           class="line-input"
           placeholder="Email"
           pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
@@ -46,7 +46,7 @@
         />
         <input
           type="password"
-          name="password" 
+          name="password"
           class="line-input"
           placeholder="Password"
           autocomplete="new-password"
@@ -55,20 +55,25 @@
         />
         <input
           type="password"
-          name="confrim-password" 
+          name="confrim-password"
           class="line-input"
           placeholder="Confrim Password"
           required
         />
         <div class="checkbox-box">
-          <input type="checkbox" class="checkbox" name="is-policy-accept" required />
-          <p class="checkbox-info">
+          <input
+            type="checkbox"
+            class="checkbox"
+            name="is-policy-accept" 
+            id="policy-checkbox"
+            required
+          />
+          <label for="policy-checkbox" class="checkbox-info">
             I accept the <a class="green-link">Terms of Use</a> &
             <a class="green-link">Privacy Policy</a>.
-          </p>
+          </label>
         </div>
-        <button type="submit" 
-        class="submit-btn">Register Now</button>
+        <button type="submit" class="submit-btn">Register Now</button>
       </form>
     </div>
   </body>
