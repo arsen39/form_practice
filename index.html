@@ -10,8 +10,8 @@
   <body>
     <div class="form-box">
       <header class="form-header">Register</header>
-      <p class="from-info">
-        Create your accaunt. It's free and only take a minute.
+      <p class="form-info">
+        Create your account. It's free and only take a minute.
       </p>
       <form action="GET" class="registration-form">
         <div class="name-familyname-box">
@@ -20,13 +20,15 @@
             name="firstname"
             placeholder="First Name"
             pattern="^[A-Z][a-z]{2,15}$"
-            autocomplete="name"
+            autocomplete="name" 
+            class="line-input"
             required
             autofocus
           />
           <input
             type="text"
-            name="lastname"
+            name="lastname" 
+            class="line-input"
             placeholder="Last Name"
             pattern="^[A-Z][a-z]{2,15}$"
             autocomplete="family-name"
@@ -35,7 +37,8 @@
         </div>
         <input
           type="email"
-          name="email"
+          name="email" 
+          class="line-input"
           placeholder="Email"
           pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
           autocomplete="email"
@@ -43,7 +46,8 @@
         />
         <input
           type="password"
-          name="password"
+          name="password" 
+          class="line-input"
           placeholder="Password"
           autocomplete="new-password"
           pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
@@ -51,19 +55,19 @@
         />
         <input
           type="password"
-          name="confrim-password"
+          name="confrim-password" 
+          class="line-input"
           placeholder="Confrim Password"
           required
         />
         <div class="checkbox-box">
-          <input type="checkbox" name="is-policy-accept" required />
+          <input type="checkbox" class="checkbox" name="is-policy-accept" required />
           <p class="checkbox-info">
             I accept the <a class="green-link">Terms of Use</a> &
             <a class="green-link">Privacy Policy</a>.
           </p>
         </div>
         <button type="submit" 
-        name="submit-btn"
         class="submit-btn">Register Now</button>
       </form>
     </div>
