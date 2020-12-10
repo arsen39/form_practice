@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="assest/css/reset.css" />
     <link rel="stylesheet" href="assest/css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
@@ -60,11 +59,23 @@
           placeholder="Confrim Password"
           required
         />
+        <select
+          name="country-select"
+          id="country-select"
+          class="country-select"
+          required
+        >
+          <option value="default" class="cs-option">Select your Country</option>
+          <option value="belarus">Belarus</option>
+          <option value="moldova">Moldova</option>
+          <option value="russia">Russia</option>
+          <option value="ukraine">Ukraine</option>
+        </select>
         <div class="checkbox-box">
           <input
             type="checkbox"
             class="checkbox"
-            name="is-policy-accept" 
+            name="is-policy-accept"
             id="policy-checkbox"
             required
           />

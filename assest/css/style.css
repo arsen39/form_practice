@@ -1,14 +1,14 @@
 body {
   margin: 50px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.8em;
+  font-size: 1.3rem;
 }
 
 .form-box {
   display: flex;
   flex-flow: column wrap;
-  max-width: 400px;
-  padding: 30px 20px;
+  max-width: 500px;
+  padding: 40px;
 
   background-color: gainsboro;
   color: grey;
@@ -21,8 +21,8 @@ body {
   align-items: center;
   text-align: center;
 
-  margin-bottom: 20px;
-  font-size: 2em;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
   color: rgb(90, 89, 89);
   background-color: gainsboro;
 }
@@ -41,8 +41,8 @@ body {
 }
 
 .form-info {
-  margin-bottom: 20px;
-  font-size: 1.3em;
+  margin-bottom: 30px;
+  font-size: 1em;
 }
 
 .registration-form {
@@ -61,22 +61,29 @@ body {
   width: 43%;
 }
 
-.line-input {
+.line-input,
+.country-select{
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border: 1px solid gray;
   border-radius: 3px;
   transition: box-shadow 50ms;
 }
 
+.country-select {
+ background-color: white;
+ color: inherit;
+}
+
 .line-input:hover,
 .line-input:focus,
-.checkbox:hover {
+.checkbox:hover,
+.country-select:hover {
   box-shadow: -1px 1px 15px -7px rgba(0, 0, 0, 0.67) inset;
 }
 
 .checkbox-box {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   transition: box-shadow 50ms;
 }
 
